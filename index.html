@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+
+
+    <title>Meus atalhos</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+</head>
+
+<body class="container bg-primary">
+    <div class="modal-overlay container-fluid d-flex align-center justify-content-center">
+        <div class="modal-classic ">
+            <form action="" onsubmit="Form.submit(event)">
+                <h2>Crie seu atalho</h2>
+                <label for="name"></label>
+                <input type="text" id="name" placeholder='ex: youtube' focus>
+
+                <label for="link"></label>
+                <input type="text" id="link" placeholder='ex: www.youtube.com'>
+
+                <div class="input-group actions">
+                    <a href="#" onclick="Modal.toggle()" class="">Cancelar</a>
+                    <!-- <input type="submit" value=""> -->
+                    <button onclick="submit()" class="nossa">Criar atalho</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+
+    <header class="container-fluid text-center ">
+        <h1 class="m-5 p-2">Biblioteca de atalhos</h1>
+
+        <div class="mt-5 row">
+            <a href="#" onclick="Modal.toggle()"
+                class="create_sc p-3 pr-5 pl-5 text-light rounded bg-dark justify-content-star weight-bold">+ Criar
+                atalho </a>
+        </div>
+    </header>
+
+    <main>
+        <div id="container_sc" class="mt-5 d-flex">
+            <div id="atalho" class="atalho bg-light rounded  add_btn mr-5" target="_blank">
+                <a href="#" class="position-relative">
+                    <img src="https://picsum.photos/152/128" class="rounded-top">
+                    <a href="#" class="position-absolute">
+                        <img src="./assets/minus.svg" class="minus delete_btn">
+                    </a>
+                    <div class="text-center p-1 mt-1">
+                        <h5 class="weight-bold">Name</h5>
+                    </div>
+                </a>
+
+            </div>
+
+
+        </div>
+
+    </main>
+    <script src="script.js"></script>
+</body>
+
+</html>
