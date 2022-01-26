@@ -46,9 +46,9 @@ const DOM = {
 
     innerHTML(shortcut, index) {
         const html = `
-            <div id="atalho" class="atalho bg-light rounded  add_btn mr-5" target="_blank">
-                <a href="https://${shortcut.link}" class="position-relative">
-                    <img src="https://picsum.photos/152/128" class="rounded-top">
+            <div id="atalho" class="atalho bg-light rounded  add_btn mt-5 mr-5" target="_blank">
+                <a href="https://${shortcut.link}" class="position-relative ">
+                    <img src="https://picsum.photos/128/116" class="rounded-top">
                     <a href="#" class="position-absolute">
                         <img onclick="Shortcut.remove(${index})" src="./assets/minus.svg" class="minus delete_btn">
                     </a>

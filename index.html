@@ -16,29 +16,20 @@
         integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 </head>
 
-<body class="container bg-primary">
-    <header class="container-fluid text-center ">
-        <h1 class="m-5 p-2">Biblioteca de atalhos</h1>
+<body class="bg-primary">
+    <header class=" m-auto container text-center row d-flex align align-center justify-content-center">
+        <h1 class="m-5 p-2 bg-white rounded col-auto text-center">Biblioteca de atalhos</h1>
 
-        <div class="mt-5 row">
-            <a href="#" onclick="Modal.toggle()"
-                class="create_sc p-3 pr-5 pl-5 text-light rounded bg-dark justify-content-star weight-bold">+ Criar
-                atalho </a>
-        </div>
+        
     </header>
-    <main>
-        <div id="container_sc" class="mt-5 d-flex">
-            <!-- <div id="atalho" class="atalho bg-light rounded  add_btn mr-5" target="_blank">
-                <a href="#" class="position-relative">
-                    <img src="https://picsum.photos/152/128" class="rounded-top">
-                    <a href="#" class="position-absolute">
-                        <img src="./assets/minus.svg" class="minus delete_btn">
-                    </a>
-                    <div class="text-center p-1 mt-1">
-                        <h5 class="weight-bold">Name</h5>
-                    </div>
-                </a>
-            </div> -->
+    <main class="container">
+        <div class="row ">
+            <a href="#" onclick="Modal.toggle()"
+                class="create_sc pr-5 p-3 pl-5 text-light rounded bg-dark">
+                <h5 class="m-auto">+ Criar atalho</h5>
+                 </a>
+        </div>
+        <div id="container_sc" class="row">
         </div>
 
         <div class="modal-overlay container-fluid d-flex align-center justify-content-center">
